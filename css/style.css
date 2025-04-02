@@ -40,11 +40,15 @@ h2{
 }
 
 h4{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .title{
     align-items: center;
+}
+
+.scroll{
+    overflow: scroll;
 }
 
 /* FINE COMMON */
@@ -74,9 +78,10 @@ h4{
 
 .col-left{
 height: 100vh;
-width: 200px;
+width: 250px;
 background-color: #000000;
 color: white;
+z-index: 1;
 }
 
 .col-radius{
@@ -89,7 +94,7 @@ color: white;
 .header{
     height: 80px;
     width: calc(100vw - 200px);
-    background-color: #080b12;
+    background-color: #00000099;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -118,15 +123,14 @@ color: white;
 
 .col-down{
 height: auto;
-width: calc(100vw - 200px);
 margin-top: 80px;
 }
 
 .bottom-row{
     height: 60px;
     background-color: #282828;
-    z-index: 9999;
     position: fixed;
+    z-index: 999;
     bottom: 0;
 }
 
@@ -142,7 +146,7 @@ margin-top: 80px;
 }
 
 .gray{
-    color: gray;
+    color: #808080;
 }
 
 .block{
@@ -155,9 +159,52 @@ margin-top: 80px;
 
 .plus{
     background-color: white;
-    font-size: 3em;
-    width: 80px;
+    width: 40px;
     color: #000000;
-    height: 60px;
     text-align: center;
+}
+
+.center{
+    align-items: center;
+}
+
+.left-hr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 60px;
+    width: 250px;
+    background-color: #00000099;
+}
+
+.yellow-hr{
+    background-color: yellow;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.m-title{
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.white{
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .small{
+        display: none;
+    }
+    
 }
