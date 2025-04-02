@@ -82,6 +82,9 @@ h4{
 .col-small{
     width: 50px;
     min-height: 20px;
+    /* debug */
+    background-color: aliceblue;
+    height: 50px;
 }
 
 .top-title{
@@ -286,7 +289,7 @@ justify-content: center;
     .small{
         display: none;
     }
-    
+
     .wrap{
         flex-wrap: wrap;
     }
