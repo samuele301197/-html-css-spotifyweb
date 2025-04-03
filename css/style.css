@@ -322,6 +322,12 @@ justify-content: center;
 .block-small:hover .circle{
     display: block;
 }
+
+img:hover{
+    opacity: 30%;
+}
+
+
 /* FINE HOVER */
 
 
