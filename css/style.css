@@ -206,6 +206,14 @@ justify-content: center;
 
 .block-small{
     height: 3px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+   
+}
+
+.block-volume{
+    height: 3px;
     width: 100px;
     background-color: gray;
     margin-top: 5px;
@@ -259,21 +267,32 @@ justify-content: center;
 }
 
 .play{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25px, -25px);
     display: none;
+   position: absolute;
+   right: 30%;
+   top: 30%;
+   opacity: 50%;
   
-
 }
 
 .relative{
     position: relative;
+
 }
 
 .hover-icon{
     color: gray;
+}
+
+.circle{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    display: none;
 }
 
 
@@ -294,6 +313,14 @@ justify-content: center;
 
 .btn:hover{
     transform: scale(1.1);
+}
+
+.block-small:hover{
+    background-color: yellow;
+}
+
+.block-small:hover .circle{
+    display: block;
 }
 /* FINE HOVER */
 
