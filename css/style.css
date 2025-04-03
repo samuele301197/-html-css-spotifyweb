@@ -76,7 +76,6 @@ h4{
 .col{
     min-height: 150px;
     width: 150px;
-    position: relative;
 }
 
 .col-small{
@@ -88,7 +87,7 @@ h4{
 }
 
 .top-title{
-    margin-top: 150px;
+    margin-top: 40px;
     margin-left: 10px;
 
 }
@@ -139,6 +138,7 @@ z-index: 1;
 .column-1{
     border-bottom: 3px solid gray;
     padding: 5px;
+    position: relative;
 }
 
 .header{
@@ -225,7 +225,7 @@ justify-content: center;
 
 .fixed{
     position: fixed;
-    bottom: 60px;
+    bottom: 80px;
     width: 250px;
     background-color: #00000099;
 }
@@ -245,6 +245,20 @@ justify-content: center;
 .white{
     color: white;
 }
+
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25px, -25px);
+    display: none;
+
+}
+
+.relative{
+    position: relative;
+}
+
 
 
 
@@ -305,6 +319,34 @@ justify-content: center;
 
     .m-li{
         width: calc (100% / 4);
+    }
+
+    .desktop{
+        display: block;
+        width: 100%;
+
+
+    }
+
+    .spot-logo{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .col-left{
+        width: 80px;
+    }
+
+    .fixed{
+        width: 80px;
+    }
+
+    .header{
+        width: calc(100vw - 80px);
     }
 }
 /* FINE MEDIA QUERY XS */
