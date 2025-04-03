@@ -61,9 +61,6 @@ h4{
     align-items: center;
 }
 
-.scroll{
-    overflow: scroll;
-}
 
 /* FINE COMMON */
 
@@ -110,7 +107,7 @@ h4{
 
 .top-row{
     background-color: #141922;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     display: flex;
 }
 
@@ -119,6 +116,7 @@ h4{
 height: calc(100vh - 80px);
 width: 250px;
 background-color: #000000;
+overflow: auto;
 color: white;
 z-index: 1;
 }
@@ -126,13 +124,14 @@ z-index: 1;
 .col-right{
     width: calc(100vw - 250px);
     height: calc(100vh - 80px);
+    overflow: auto;
 }
+
 
 .col-radius{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: white;
+   
+ 
 }
 
 .column-1{
@@ -155,7 +154,7 @@ z-index: 1;
     display: flex;
     justify-content: flex-end;
     margin-top: 15px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .btn{
@@ -248,6 +247,7 @@ justify-content: center;
 
 .play{
     position: absolute;
+    background-color: #00000099;
     top: 50%;
     left: 50%;
     transform: translate(-25px, -25px);
@@ -258,6 +258,23 @@ justify-content: center;
 .relative{
     position: relative;
 }
+
+
+/* HOVER */
+.hover:hover {
+    color: white;
+}
+
+.relative:hover .play{
+    display: inline-block; 
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* FINE HOVER */
 
 
 
